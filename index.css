@@ -130,10 +130,6 @@ font
   padding-left: 50px;
   border-left: 2px solid aquamarine;
 }
-/* .sec:nth-child(1) {
-  padding-top: 0;
-  margin-top: 120px;
-} */
 
 .sec:nth-child(6) {
   padding-bottom: 500px;
