@@ -25,7 +25,7 @@ li {
   transition: border-left 0.1s ease;
 }
 span {
-  font-weight: 700;
+  font-weight: 500;
 }
 a {
   text-decoration: none;
@@ -40,10 +40,12 @@ a:hover li {
   border-left: 3px solid rgb(219, 98, 98);
 }
 h4 {
+  margin-bottom: 0;
   font-weight: 500;
 }
 h6,
 h5 {
+  margin-top: 0;
   font-weight: 100;
   font-style: normal;
 }
@@ -125,7 +127,7 @@ font
 .sec {
   height: 100vh;
   padding-top: 120px;
-  padding-left: 20px;
+  padding-left: 50px;
   border-left: 2px solid aquamarine;
 }
 /* .sec:nth-child(1) {
@@ -146,4 +148,8 @@ font
 }
 .date {
   margin: 0;
+}
+
+.proj {
+  padding-left: 20px;
 }
