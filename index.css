@@ -78,3 +78,14 @@ font
 .sec:nth-child(6) {
   padding-bottom: 500px;
 }
+
+.school {
+  gap: 50px;
+}
+
+.name {
+  margin-bottom: 0;
+}
+.date {
+  margin: 0;
+}
