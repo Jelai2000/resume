@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(41, 38, 42);
+  color: aquamarine;
+  scroll-behavior: smooth;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: 5px 0 5px 10px;
+  border-left: 0 solid rgb(219, 98, 98);
+
+  transition: border-left 0.1s ease;
+}
+span {
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: aquamarine;
+}
+
+a:hover li {
+  border-left: 3px solid rgb(219, 98, 98);
+}
+
+h6,
+h5 {
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*
+font
+.comme-<uniquifier> {
+  font-family: "Comme", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+} */
+
+.center {
+  display: grid;
+  margin: 0 150px;
+}
+
+.details {
+  display: grid;
+  padding-left: 400px;
+}
+
+.nav {
+  position: fixed;
+  top: 20%; /* Ensure it sticks to the top */
+  background-color: rgb(41, 38, 42); /* Optional: Add background color */
+  z-index: 1001; /* Optional: Ensure it stays above other content */
+}
+
+.sec {
+  padding-top: 120px;
+}
+
+.sec:nth-child(6) {
+  padding-bottom: 500px;
+}
