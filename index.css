@@ -6,6 +6,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+  overflow: hidden;
 }
 
 html {
@@ -38,7 +39,9 @@ a {
 a:hover li {
   border-left: 3px solid rgb(219, 98, 98);
 }
-
+h4 {
+  font-weight: 500;
+}
 h6,
 h5 {
   font-weight: 100;
@@ -61,7 +64,55 @@ font
 
 .details {
   display: grid;
-  padding-left: 400px;
+  margin-left: 380px;
+  position: relative;
+}
+.sec::before {
+  content: "";
+  position: absolute;
+  top: 138px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  background: aquamarine;
+  border-radius: 50%;
+  border: 3px solid aquamarine;
+}
+
+.sec:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 835px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  background: aquamarine;
+  border-radius: 50%;
+  border: 3px solid aquamarine;
+}
+
+.sec:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 1530px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  background: aquamarine;
+  border-radius: 50%;
+  border: 3px solid aquamarine;
+}
+
+.sec:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 1530px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  background: aquamarine;
+  border-radius: 50%;
+  border: 3px solid aquamarine;
 }
 
 .nav {
@@ -72,8 +123,15 @@ font
 }
 
 .sec {
+  height: 100vh;
   padding-top: 120px;
+  padding-left: 20px;
+  border-left: 2px solid aquamarine;
 }
+/* .sec:nth-child(1) {
+  padding-top: 0;
+  margin-top: 120px;
+} */
 
 .sec:nth-child(6) {
   padding-bottom: 500px;
