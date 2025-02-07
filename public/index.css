@@ -21,7 +21,6 @@ ul {
 li {
   padding: 5px 0 5px 10px;
   border-left: 0 solid rgb(219, 98, 98);
-
   transition: border-left 0.1s ease;
 }
 span {
@@ -151,4 +150,69 @@ h5 {
 
 .exp .work {
   margin-top: 40px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .center {
+    display: grid;
+    padding: 0 50px;
+    margin: 0;
+  }
+  .nav {
+    background-color: rgb(41, 38, 42);
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(41, 38, 42); /* Optional: Add background color */
+    z-index: 1001; /* Optional: Ensure it stays above other content */
+  }
+  .nav h1 {
+    text-align: center;
+  }
+
+  .tion {
+    display: flex;
+    gap: 0 10px;
+    justify-content: center;
+  }
+
+  .tion li {
+    font-size: small;
+    padding: 5px 0 5px 0;
+  }
+  a:hover li {
+    border-left: 0px solid rgb(219, 98, 98);
+    border-bottom: 5px solid rgb(219, 98, 98);
+  }
+  .details {
+    display: grid;
+    margin-left: 0;
+    position: relative;
+    margin: 0 20px;
+  }
+
+  .sec {
+    height: 100vh;
+    padding-top: 120px;
+    padding-left: 50px;
+    border-left: 2px solid aquamarine;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
