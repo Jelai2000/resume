@@ -107,6 +107,18 @@ h5 {
   border: 3px solid aquamarine;
 }
 
+.sec:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  top: 2920px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  background: aquamarine;
+  border-radius: 50%;
+  border: 3px solid aquamarine;
+}
+
 .nav {
   position: fixed;
   top: 20%; /* Ensure it sticks to the top */
@@ -152,19 +164,29 @@ h5 {
   margin-top: 40px;
 }
 
+.created {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  body {
+    overflow: scroll;
+  }
   .center {
     display: grid;
     padding: 0 50px;
     margin: 0;
+    padding-bottom: 200px;
   }
   .nav {
+    width: 367px;
     background-color: rgb(41, 38, 42);
-    width: 100%;
     text-align: center;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     background-color: rgb(41, 38, 42); /* Optional: Add background color */
     z-index: 1001; /* Optional: Ensure it stays above other content */
   }
@@ -179,7 +201,7 @@ h5 {
   }
 
   .tion li {
-    font-size: small;
+    font-size: x-small;
     padding: 5px 0 5px 0;
   }
   a:hover li {
@@ -194,10 +216,74 @@ h5 {
   }
 
   .sec {
-    height: 100vh;
+    height: auto;
     padding-top: 120px;
-    padding-left: 50px;
+    padding-left: 30px;
     border-left: 2px solid aquamarine;
+  }
+
+  .sec::before {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 1160px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 1620px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 2473px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    top: 3009px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+  .created {
+    text-align: center;
+    padding-bottom: 50px;
   }
 }
 
