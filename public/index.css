@@ -182,13 +182,13 @@ h5 {
   }
   .nav {
     width: 367px;
-    background-color: rgb(41, 38, 42);
+    background-color: transparent;
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(41, 38, 42); /* Optional: Add background color */
     z-index: 1001; /* Optional: Ensure it stays above other content */
+    backdrop-filter: blur(50px);
   }
   .nav h1 {
     text-align: center;
@@ -237,7 +237,7 @@ h5 {
   .sec:nth-child(2)::before {
     content: "";
     position: absolute;
-    top: 1160px;
+    top: 1190px;
     left: -10px;
     width: 15px;
     height: 15px;
@@ -249,7 +249,7 @@ h5 {
   .sec:nth-child(3)::before {
     content: "";
     position: absolute;
-    top: 1620px;
+    top: 1650px;
     left: -10px;
     width: 15px;
     height: 15px;
@@ -261,7 +261,7 @@ h5 {
   .sec:nth-child(4)::before {
     content: "";
     position: absolute;
-    top: 2473px;
+    top: 2503px;
     left: -10px;
     width: 15px;
     height: 15px;
@@ -273,7 +273,7 @@ h5 {
   .sec:nth-child(5)::before {
     content: "";
     position: absolute;
-    top: 3009px;
+    top: 3109px;
     left: -10px;
     width: 15px;
     height: 15px;
