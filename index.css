@@ -39,8 +39,8 @@ a:hover li {
   border-left: 5px solid rgb(219, 98, 98);
 }
 
-li:active {
-  background-color: yellow;
+.tion li.active {
+  border-left: 5px solid rgb(219, 98, 98);
 }
 
 h4 {
@@ -211,6 +211,10 @@ h5 {
   }
   a:hover li {
     border-left: 0px solid rgb(219, 98, 98);
+    border-bottom: 5px solid rgb(219, 98, 98);
+  }
+  .tion li.active {
+    border-left: 0 solid rgb(219, 98, 98);
     border-bottom: 5px solid rgb(219, 98, 98);
   }
   .details {
