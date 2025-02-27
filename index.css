@@ -6,7 +6,6 @@ body {
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  overflow: hidden;
 }
 
 html {
@@ -186,11 +185,6 @@ h5 {
   margin-top: 30px;
 }
 
-.created {
-  text-align: center;
-  padding-bottom: 50px;
-}
-
 .contact h4 {
   font-weight: 300;
   margin-bottom: 30px;
@@ -202,8 +196,17 @@ h5 {
   text-decoration: underline;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h5 {
+  margin: 0;
+}
+@media only screen and (max-width: 320px) {
   body {
     overflow: scroll;
   }
@@ -211,10 +214,402 @@ h5 {
     display: grid;
     padding: 0 50px;
     margin: 0;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
   .nav {
-    width: 367px;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001; /* Optional: Ensure it stays above other content */
+    backdrop-filter: blur(50px);
+  }
+  .nav h1 {
+    text-align: center;
+  }
+
+  .tion {
+    display: flex;
+    gap: 0 10px;
+    justify-content: center;
+  }
+
+  .about h4 {
+    font-size: small;
+  }
+  .school h4 {
+    font-size: small;
+  }
+  .tion li {
+    font-size: x-small;
+    padding: 5px 0 5px 0;
+  }
+  a:hover li {
+    border-left: 0px solid rgb(219, 98, 98);
+    border-bottom: 5px solid rgb(219, 98, 98);
+  }
+  .tion li.active {
+    border-left: 0 solid rgb(219, 98, 98);
+    border-bottom: 5px solid rgb(219, 98, 98);
+  }
+  .details {
+    display: grid;
+    margin-left: 0;
+    position: relative;
+  }
+
+  .sec {
+    height: auto;
+    padding-top: 120px;
+    padding-left: 30px;
+    border-left: 2px solid aquamarine;
+  }
+
+  .sec::before {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 674px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 1113px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 1917px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    top: 2423px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+  .created {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .contact h4 {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 321px) {
+  body {
+    overflow: scroll;
+  }
+  .school h4 {
+    font-size: small;
+  }
+  .center {
+    display: grid;
+    padding: 0 50px;
+    margin: 0;
+    padding-bottom: 100px;
+  }
+  .nav {
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001; /* Optional: Ensure it stays above other content */
+    backdrop-filter: blur(50px);
+  }
+  .nav h1 {
+    text-align: center;
+  }
+
+  .tion {
+    display: flex;
+    gap: 0 10px;
+    justify-content: center;
+  }
+
+  .about h4 {
+    font-size: small;
+  }
+
+  .tion li {
+    font-size: x-small;
+    padding: 5px 0 5px 0;
+  }
+  a:hover li {
+    border-left: 0px solid rgb(219, 98, 98);
+    border-bottom: 5px solid rgb(219, 98, 98);
+  }
+  .tion li.active {
+    border-left: 0 solid rgb(219, 98, 98);
+    border-bottom: 5px solid rgb(219, 98, 98);
+  }
+  .details {
+    display: grid;
+    margin-left: 0;
+    position: relative;
+    margin: 0 20px;
+  }
+
+  .sec {
+    height: auto;
+    padding-top: 120px;
+    padding-left: 30px;
+    border-left: 2px solid aquamarine;
+  }
+
+  .sec::before {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 657px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 1096px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 1870px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    top: 2375px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+  .created {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .contact h4 {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+  body {
+    overflow: scroll;
+  }
+  .school h4 {
+    font-size: small;
+  }
+  .center {
+    display: grid;
+    padding: 0 50px;
+    margin: 0;
+    padding-bottom: 100px;
+  }
+  .nav {
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001; /* Optional: Ensure it stays above other content */
+    backdrop-filter: blur(50px);
+  }
+  .nav h1 {
+    text-align: center;
+  }
+
+  .tion {
+    display: flex;
+    gap: 0 10px;
+    justify-content: center;
+  }
+
+  .about h4 {
+    font-size: small;
+  }
+
+  .tion li {
+    font-size: x-small;
+    padding: 5px 0 5px 0;
+  }
+  a:hover li {
+    border-left: 0px solid rgb(219, 98, 98);
+    border-bottom: 5px solid rgb(219, 98, 98);
+  }
+  .tion li.active {
+    border-left: 0 solid rgb(219, 98, 98);
+    border-bottom: 5px solid rgb(219, 98, 98);
+  }
+  .details {
+    display: grid;
+    margin-left: 0;
+    position: relative;
+    margin: 0 20px;
+  }
+
+  .sec {
+    height: auto;
+    padding-top: 120px;
+    padding-left: 30px;
+    border-left: 2px solid aquamarine;
+  }
+
+  .sec::before {
+    content: "";
+    position: absolute;
+    top: 140px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 577px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 1000px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 1695px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    top: 2185px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+  .created {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .contact h4 {
+    font-size: small;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (min-width: 426px) {
+  body {
+    overflow: scroll;
+  }
+  .center {
+    display: grid;
+    padding: 0 50px;
+    margin: 0;
+    padding-bottom: 100px;
+  }
+  .nav {
+    width: 100%;
     background-color: transparent;
     text-align: center;
     position: fixed;
@@ -331,18 +726,91 @@ h5 {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-} */
-
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-} */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    display: grid;
+    margin: 0 100px;
+  }
 
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
-} */
+  .nav h1 {
+    font-size: x-large;
+  }
+  .details {
+    display: grid;
+    margin-left: 280px;
+    position: relative;
+  }
+  .about h4 {
+    font-size: small;
+  }
+  .sec {
+    height: auto;
+    padding-top: 100px;
+  }
+  .school h4 {
+    font-size: small;
+  }
+  .contact h4 {
+    font-size: small;
+  }
+  .sec::before {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-} */
+  .sec:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 555px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 972px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 1677px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+
+  .sec:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    top: 2146px;
+    left: -10px;
+    width: 15px;
+    height: 15px;
+    background: aquamarine;
+    border-radius: 50%;
+    border: 3px solid aquamarine;
+  }
+}
