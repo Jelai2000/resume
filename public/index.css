@@ -47,7 +47,28 @@ h4 {
   margin-bottom: 0;
   font-weight: 500;
 }
-h6,
+
+.about h4 {
+  font-weight: 100;
+}
+.details h5 {
+  margin-bottom: 10px;
+}
+
+.proj a {
+  text-decoration: underline;
+}
+
+.proj h4:nth-child(2) {
+  margin-bottom: 0;
+  font-weight: 100;
+  margin-top: 7px;
+}
+.proj h5:nth-child(3) {
+  margin-top: 10px;
+}
+
+.details h6,
 h5 {
   margin-top: 5px;
   font-weight: 100;
@@ -153,10 +174,6 @@ h5 {
   margin: 0;
 }
 
-.proj {
-  padding-left: 20px;
-}
-
 .exp h5 {
   margin-bottom: 0;
 }
@@ -166,12 +183,23 @@ h5 {
 }
 
 .exp .work {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .created {
   text-align: center;
   padding-bottom: 50px;
+}
+
+.contact h4 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.contact h5 {
+  margin-bottom: 20px;
+}
+.contact a {
+  text-decoration: underline;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -203,6 +231,10 @@ h5 {
     display: flex;
     gap: 0 10px;
     justify-content: center;
+  }
+
+  .about h4 {
+    font-size: small;
   }
 
   .tion li {
@@ -246,7 +278,7 @@ h5 {
   .sec:nth-child(2)::before {
     content: "";
     position: absolute;
-    top: 1190px;
+    top: 835px;
     left: -10px;
     width: 15px;
     height: 15px;
@@ -258,7 +290,7 @@ h5 {
   .sec:nth-child(3)::before {
     content: "";
     position: absolute;
-    top: 1650px;
+    top: 1323px;
     left: -10px;
     width: 15px;
     height: 15px;
@@ -270,7 +302,7 @@ h5 {
   .sec:nth-child(4)::before {
     content: "";
     position: absolute;
-    top: 2503px;
+    top: 2127px;
     left: -10px;
     width: 15px;
     height: 15px;
@@ -282,7 +314,7 @@ h5 {
   .sec:nth-child(5)::before {
     content: "";
     position: absolute;
-    top: 3109px;
+    top: 2635px;
     left: -10px;
     width: 15px;
     height: 15px;
@@ -293,6 +325,9 @@ h5 {
   .created {
     text-align: center;
     padding-bottom: 50px;
+  }
+  .contact h4 {
+    font-size: small;
   }
 }
 
